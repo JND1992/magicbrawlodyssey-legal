@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--
+  Datenschutzerklärung Magic Brawl Odyssey (am 05.10.2026 kurz "Arkambo", davor "Magic Run & Fight"; Name unter dem
+  Android-Symbol "Brawl Odyssey"), Fassung 3 (Stand 05.10.2026: neuer App-Name, Orden;
+  Fassung 2 vom 03.10.2026: gespeicherte Koop-Räume; Fassung 1 vom 30.09.2026, ergänzt 01.10.2026).
+  Von Claude nach dem Code-Stand entworfen, von Jan entschieden - keine Rechtsberatung.
+  Veröffentlicht unter https://jnd1992.github.io/magicbrawlodyssey-legal/datenschutz.html (Repo JND1992/magicbrawlodyssey-legal, seit
+  05.10.2026; vorher Fassung 1 unter .../MagicRunAndFight-Legal/...). Änderungen hier UND im veröffentlichten Repo nachziehen.
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Magic Brawl Odyssey</title>
+<meta name="description" content="Datenschutzerklärung für die Android-App Magic Brawl Odyssey (Privacy Policy).">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1d1d1f;
+    --muted: #5a5a60;
+    --accent: #1a5fb4;
+    --line: #dcdce0;
+    --note-bg: #fff4c2;
+    --note-line: #d4a300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181c;
+      --fg: #e9e9ec;
+      --muted: #a9a9b2;
+      --accent: #8ab4ff;
+      --line: #34363c;
+      --note-bg: #3b3200;
+      --note-line: #c9a200;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 16px 16px 48px; }
+  h1 { font-size: 1.55rem; line-height: 1.25; margin: 0.6rem 0 0.4rem; }
+  h2 { font-size: 1.2rem; line-height: 1.3; margin: 2.2rem 0 0.6rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  h3 { font-size: 1.03rem; margin: 1.4rem 0 0.4rem; }
+  p, li { overflow-wrap: break-word; hyphens: auto; }
+  ul, ol { padding-left: 1.3rem; }
+  li { margin: 0.25rem 0; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  address { font-style: normal; margin: 0.4rem 0 0.8rem; }
+  .meta { color: var(--muted); font-size: 0.92rem; margin: 0 0 1rem; }
+  .small { color: var(--muted); font-size: 0.92rem; }
+  .path { font-weight: 600; }
+  .entwurf {
+    background: var(--note-bg);
+    border: 2px solid var(--note-line);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 0.8rem 0 1.2rem;
+  }
+  .pruefen {
+    background: var(--note-bg);
+    outline: 1px dashed var(--note-line);
+    border-radius: 3px;
+    padding: 0 3px;
+  }
+  div.pruefen { display: block; padding: 8px 12px; margin: 0.6rem 0; }
+  nav ol { margin: 0.4rem 0 0; }
+  .en { margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Datenschutzerklärung für die App „Magic Brawl Odyssey“</h1>
+<p class="meta">Fassung 3 · Stand: 5. Oktober 2026 · <a href="#english">English version below</a></p>
+
+<p>
+  Diese Erklärung beschreibt, welche Daten die Android-App „Magic Brawl Odyssey“ (früher „Arkambo“ bzw.
+  „Magic Run &amp; Fight“) verarbeitet, wofür und
+  welche Rechte du hast. Kurz gesagt: Das Solo-Spiel funktioniert offline. Daten gehen über das Internet, wenn du
+  den Online-Koop nutzt, etwas kaufst, freiwillig einen Werbeclip ansiehst oder deinen Fortschritt mit Google
+  sicherst. Einen Chat gibt es nicht.
+</p>
+
+<nav aria-label="Inhalt">
+  <strong>Inhalt</strong>
+  <ol>
+    <li><a href="#verantwortlicher">Verantwortlicher und anwendbares Recht</a></li>
+    <li><a href="#ueberblick">Überblick und Daten auf deinem Gerät</a></li>
+    <li><a href="#online-koop">Online-Koop (Unity Gaming Services)</a></li>
+    <li><a href="#diagnose">Absturzdaten (Google Play)</a></li>
+    <li><a href="#fehlerprotokoll">Lokales Fehlerprotokoll</a></li>
+    <li><a href="#kaeufe">In-App-Käufe (Google Play)</a></li>
+    <li><a href="#werbung">Freiwillige Werbeclips (Unity LevelPlay)</a></li>
+    <li><a href="#cloud">Fortschritt sichern (Google Play Games und Unity Cloud Save)</a></li>
+    <li><a href="#ausland">Übermittlung ins Ausland</a></li>
+    <li><a href="#kinder">Kinder und Jugendliche</a></li>
+    <li><a href="#rechte">Deine Rechte und Löschung</a></li>
+    <li><a href="#webseite">Diese Webseite</a></li>
+    <li><a href="#aenderungen">Änderungen und Stand</a></li>
+  </ol>
+</nav>
+
+<h2 id="verantwortlicher">1. Verantwortlicher und anwendbares Recht</h2>
+<p>Verantwortlich für die Datenverarbeitung in dieser App ist:</p>
+<address>
+  Jan-Niklas Dohm<br>
+  Unterdorfstrasse 11<br>
+  3510 Konolfingen<br>
+  Schweiz<br>
+  E-Mail: <a href="mailto:magicrunandfight@gmail.com">magicrunandfight@gmail.com</a>
+</address>
+<p>
+  Ich entwickle die App allein. Für Fragen zum Datenschutz und für alle Anfragen zu deinen Rechten erreichst du mich
+  unter dieser E-Mail-Adresse.
+</p>
+<p>
+  Da ich meinen Sitz in der Schweiz habe, gilt das Schweizer Datenschutzgesetz (DSG). Weil die App auch Menschen in
+  der Europäischen Union und im Europäischen Wirtschaftsraum (EWR) angeboten wird, gilt für sie zusätzlich die
+  Datenschutz-Grundverordnung (DSGVO). Die Angaben zu Rechtsgrundlagen in dieser Erklärung beziehen sich auf die DSGVO;
+  für Nutzer in der Schweiz gelten die entsprechenden Grundsätze des DSG.
+</p>
+
+<h2 id="ueberblick">2. Überblick und Daten auf deinem Gerät</h2>
+<ul>
+  <li>Das Solo-Spiel funktioniert ohne Internet. Du brauchst kein Benutzerkonto, keinen Namen und keine E-Mail-Adresse.</li>
+  <li>Die App fragt keine Berechtigungen für Standort, Kontakte, Kamera, Mikrofon oder Dateien an. Sie nutzt den
+    Internetzugang (inklusive Abfrage, ob eine Verbindung besteht), die Vibration, die Google-Play-Kaufabwicklung und
+    für die Werbung die Werbe-ID deines Geräts (siehe <a href="#werbung">Abschnitt 7</a>).</li>
+</ul>
+
+<h3>Was auf deinem Gerät gespeichert wird</h3>
+<ul>
+  <li>dein Spielfortschritt: deine Abenteuer (Held, Stufe, Erfahrung, Attribute, Ausrüstung, Beutel, Schmiede,
+    Bestzeiten), die gewählte Schwierigkeit, der Gegnerkompass und deine Orden (Zählerstände wie besiegte Gegner
+    oder geschaffte Level, erreichte Stufen, Ordenspunkte und Rang; je Gerät mit der zufälligen Gerätekennung),</li>
+  <li>deine Münzen, gekaufte Welten, Helden und das Komplettpaket sowie eine zufällige Gerätekennung, mit der die Münzen
+    mehrerer Geräte beim Sichern auseinandergehalten werden,</li>
+  <li>dein selbst gewählter Spielername, deine Einstellungen (z. B. Ton, Steuerung, Sprache) und deine Entscheidung
+    zur personalisierten Werbung,</li>
+  <li>lokale Ranglisten; die Koop-Rangliste enthält auch die Namen deiner Mitspieler aus gewonnenen Koop-Runden,</li>
+  <li>das Koop-Fehlerprotokoll (siehe <a href="#fehlerprotokoll">Abschnitt 5</a>),</li>
+  <li>gespeicherte Koop-Räume: als Gastgeber deine Räume mit den Namen der Mitglieder und einem Hash-Wert ihrer
+    Online-ID, als Mitglied eine Kopie (siehe <a href="#raeume">Abschnitt 3 h</a>),</li>
+  <li>für den Online-Koop und die Kontosicherung: deine Online-ID, das Anmelde-Token von Unity, eine zufällige
+    Installationskennung und der zuletzt verwendete Raum-Code.</li>
+</ul>
+<p>
+  Auf diese Daten habe ich keinen Zugriff, ausser du sicherst deinen Fortschritt (siehe <a href="#cloud">Abschnitt 8</a>).
+  Du löschst sie, indem du die App deinstallierst oder in den Android-Einstellungen unter
+  <span class="path">Apps › Brawl Odyssey › Speicher › Daten löschen</span> die App-Daten löschst. Dabei gehen
+  Fortschritt und Münzen verloren, sofern du sie nicht gesichert hast. Gekaufte Inhalte stellt Google Play bei der
+  nächsten Anmeldung mit demselben Google-Konto wieder her.
+</p>
+<p>
+  Wenn du die Android-Sicherung in deinem Google-Konto eingeschaltet hast, kann Android diese Daten dort sichern
+  und auf einem neuen Gerät wiederherstellen. Das ist eine Funktion von Android und deinem Google-Konto; ich
+  erhalte dabei keine Daten.
+</p>
+
+<h2 id="online-koop">3. Online-Koop (Unity Gaming Services)</h2>
+<p>
+  Der Online-Koop ist freiwillig. Erst wenn du im Koop-Bildschirm einen Raum erstellst oder öffnest oder
+  „Beitreten“ antippst – oder die App eine laufende Koop-Runde nach einer Unterbrechung automatisch wieder
+  verbindet – nimmt die App dafür Verbindung zu den Online-Diensten auf. Vor dem ersten Mal zeigt die App dazu
+  einen kurzen Hinweis.
+  Im Koop wird nie Werbung gezeigt.
+</p>
+<p>
+  Für den Online-Koop nutze ich die Unity Gaming Services von Unity Technologies SF, 116 New Montgomery Street,
+  Suite 200, San Francisco, CA 94105, USA („Unity“). Unity verarbeitet diese Daten in meinem Auftrag als
+  Auftragsverarbeiter (Art. 28 DSGVO, Art. 9 DSG) auf Grundlage des Auftragsverarbeitungsvertrags von Unity
+  (Unity Data Processing Addendum).
+  Datenschutzhinweise von Unity: <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>.
+</p>
+
+<h3>a) Anmeldung (Unity Authentication)</h3>
+<p>
+  Beim ersten Online-Koop legt die App ohne weiteres Zutun ein Online-Konto an: Unity vergibt eine zufällige
+  Spieler-ID (im Spiel „Online-ID“ genannt). Dafür brauchst du weder Namen noch E-Mail-Adresse noch Passwort. Auf
+  deinem Gerät wird ein Anmelde-Token gespeichert, damit du beim nächsten Mal dieselbe Online-ID behältst. Bei der
+  Anmeldung übermittelt die App ausserdem eine zufällige Kennung dieser App-Installation. Wie bei jeder
+  Internetverbindung verarbeitet Unity dabei deine IP-Adresse. Den Anfang deiner Online-ID siehst du unter
+  <span class="path">Einstellungen › Online &amp; Info</span>. Solange du die Kontosicherung
+  (<a href="#cloud">Abschnitt 8</a>) nicht nutzt, ist dieses Konto anonym.
+</p>
+
+<h3>b) Spielverbindung (Unity Relay)</h3>
+<p>
+  Alle Spieldaten zwischen dir und deinen Mitspielern laufen verschlüsselt über Relay-Server von Unity. Dabei
+  werden deine IP-Adresse und Verbindungsdaten verarbeitet (z. B. Zeitpunkt, Dauer, Datenmenge und
+  Verbindungsqualität). Um einen Server in deiner Nähe zu wählen, misst die App die Verbindung zu mehreren
+  Server-Regionen; daraus ergibt sich dein ungefährer Standort (etwa Land oder Region, nie ein genauer Standort).
+  Laut Unity verarbeitet Relay ausserdem kurzlebige Kennungen sowie Nutzungs- und Leistungsdaten der Verbindung.
+  Deine Mitspieler erhalten deine IP-Adresse nicht, weil alle Daten über die Relay-Server laufen.
+</p>
+
+<h3>c) Raum-Code (Unity Lobby)</h3>
+<p>
+  Damit der geteilte Raum-Code während der ganzen Runde gültig bleibt, legt die App des Gastgebers bei Unity einen
+  kurzlebigen, privaten Raum-Eintrag an. Er enthält nur den Raum-Code, den aktuellen Verbindungscode für Relay und
+  die Mitgliederliste mit den Online-IDs der Mitglieder. Namen werden dort nicht gespeichert.
+  Alle Mitglieder desselben Raums können die Online-IDs der anderen Mitglieder technisch abrufen; die App zeigt sie
+  nicht an. Der Eintrag wird gelöscht, wenn der Gastgeber den Raum schliesst; andernfalls entfernt Unity ihn nach
+  einiger Zeit ohne Aktivität automatisch. Laut Unity verarbeitet Lobby ausserdem deinen ungefähren Standort und
+  technische Diagnosedaten.
+</p>
+
+<h3>d) Was deine Mitspieler erhalten</h3>
+<p>An die Mitspieler in deinem Raum gehen:</p>
+<ul>
+  <li>dein selbst gewählter Name (höchstens 16 Zeichen; unsichtbare Zeichen und Emojis werden entfernt,
+    beleidigende Namen werden abgelehnt),</li>
+  <li>dein Held, deine Eingaben und der Spielstand (z. B. Positionen, Treffer und Ergebnisse),</li>
+  <li>dein Held in diesem Raum mit Stufe und Ausrüstung; der Gastgeber erhält und speichert deinen ganzen
+    Heldenstand im Raum (siehe <a href="#raeume">h</a>),</li>
+  <li>an den Gastgeber: welche Helden du besitzt und ob du das Komplettpaket gekauft hast (davon hängt ab, welche
+    Helden im Raum wählbar sind); als Gastgeber ergibt sich aus den angebotenen Welten ausserdem, welche Welten du
+    besitzt,</li>
+  <li>technische Angaben wie die App-Version und eine zufällige Kennung zum Wiederverbinden,</li>
+  <li>technisch auch deine Online-ID.</li>
+</ul>
+<p>
+  Die Apps deiner Mitspieler zeigen deinen Namen an und speichern die Teamnamen gewonnener Runden in ihrer lokalen
+  Koop-Rangliste. Diese Einträge liegen auf den Geräten deiner Mitspieler; ich kann sie nicht löschen – auch
+  dann nicht, wenn du dein Online-Konto löschst. Einen Chat, Sprachchat oder freie Textnachrichten gibt es nicht.
+</p>
+
+<h3>e) Einladungen</h3>
+<p>
+  Den Raum-Code kannst du über die Teilen-Funktion von Android oder die Zwischenablage an Freunde schicken. Welche
+  App du dafür nutzt (z. B. einen Messenger), entscheidest du; für sie gelten deren Datenschutzbestimmungen.
+  Ich erhalte davon nichts.
+</p>
+
+<h3>f) Rechtsgrundlagen</h3>
+<ul>
+  <li>Art. 6 Abs. 1 lit. b DSGVO: Bereitstellung der von dir gewünschten Online-Koop-Funktion (Anmeldung,
+    Verbindung, Raum-Code, Übertragung an deine Mitspieler).</li>
+  <li>Art. 6 Abs. 1 lit. f DSGVO: mein berechtigtes Interesse an einem sicheren und stabilen Betrieb
+    (z. B. Namensfilter, Schutz vor Missbrauch).</li>
+  <li>Für Nutzer in Deutschland: Speichern und Auslesen von Informationen auf deinem Gerät (Spielstand,
+    Anmelde-Token, Installationskennung) nach § 25 Abs. 2 Nr. 2 TDDDG, weil dies für die von dir gewünschte Funktion
+    unbedingt erforderlich ist.</li>
+</ul>
+
+<h3>g) Speicherdauer</h3>
+<ul>
+  <li>Online-Konto (Online-ID): bis du es in der App löschst oder die Löschung per E-Mail verlangst.</li>
+  <li>Relay-Verbindungsdaten: nur für die Dauer der Verbindung; technische Protokolle bei Unity nach Unitys
+    Löschfristen.</li>
+  <li>Raum-Eintrag (Lobby): bis der Raum geschlossen oder von Unity wegen Inaktivität entfernt wird.</li>
+  <li>Daten auf deinem Gerät: bis du sie löschst (siehe <a href="#ueberblick">Abschnitt 2</a> und
+    <a href="#loeschung">Löschung</a>).</li>
+  <li>Gespeicherte Koop-Räume: siehe h).</li>
+</ul>
+
+<h3 id="raeume">h) Gespeicherte Koop-Räume</h3>
+<p>
+  Jeder Koop-Raum wird gespeichert, damit das Team später weiterspielen kann. Den Raum speichert nur die App des
+  Gastgebers, auf seinem Gerät. Sie speichert je Mitglied (höchstens 8): den selbst gewählten Namen, den Helden mit
+  seinem Spielstand in diesem Raum (z. B. Stufe, Erfahrung, Ausrüstung), eine zufällige Mitglieds-Kennung und einen
+  <strong>Hash-Wert der Online-ID</strong>. Die Online-ID selbst wird nicht gespeichert, nur dieser aus ihr berechnete
+  Prüfwert, aus dem sich die Online-ID nicht ablesen lässt. Er dient nur dazu, ein Mitglied beim nächsten Beitritt
+  wiederzuerkennen. Nutzt der Gastgeber die Kontosicherung (<a href="#cloud">Abschnitt 8</a>), liegen dieselben Daten
+  auch in seiner Sicherung bei Unity Cloud Save.
+</p>
+<p>
+  Die App eines Mitglieds speichert eine Kopie: den Namen des Raums und des Gastgebers, den zuletzt verwendeten
+  Raum-Code, die eigene Mitglieds-Kennung und den eigenen Helden im Raum; mit der Kontosicherung auch in der eigenen
+  Sicherung.
+</p>
+<ul>
+  <li><strong>Löschen:</strong> Löscht der Gastgeber den Raum (<span class="path">Koop › Deine Räume › „Löschen“</span>),
+    werden Namen und Hash-Werte aller Mitglieder auf seinem Gerät gelöscht und beim nächsten Abgleich auch in seiner
+    Sicherung. Ein einzelnes fehlendes Mitglied kann der Gastgeber in der Lobby löschen („Mitglied löschen“). Deine
+    Kopie entfernst du unter <span class="path">Koop › Deine Räume › „Entfernen“</span>; deine Daten im Raum des
+    Gastgebers kann nur er löschen – bitte ihn darum.</li>
+  <li><strong>Speicherdauer:</strong> bis der Gastgeber den Raum oder das Mitglied löscht bzw. du deine Kopie
+    entfernst, oder bis die App-Daten gelöscht werden.</li>
+  <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO – der von den Mitgliedern gewünschte gemeinsame
+    Spielstand des Raums.</li>
+</ul>
+
+<h2 id="diagnose">4. Absturzdaten (Google Play)</h2>
+<p>
+  Die App selbst sendet keine Absturz- oder Diagnoseberichte. Wenn du in den Android-Einstellungen das Senden von
+  Nutzungs- und Diagnosedaten erlaubt hast, stellt Google mir zusammengefasste Absturz- und Leistungsberichte in der
+  Google Play Console bereit („Android Vitals“). Dafür ist Google verantwortlich (Google Ireland Limited, Gordon House,
+  Barrow Street, Dublin 4, Irland); Datenschutzerklärung von Google:
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+</p>
+
+<h2 id="fehlerprotokoll">5. Lokales Fehlerprotokoll</h2>
+<p>
+  Für die Fehlersuche im Online-Koop führt die App ein kurzes Fehlerprotokoll (z. B. Verbindungsstatus, Pausen,
+  Fehlermeldungen und Verbindungsqualität). Es enthält keine Namen und keine Raum-Codes, bleibt auf deinem Gerät
+  und wird von der App nirgendwohin gesendet. Die App behält nur die aktuelle und die vorherige Sitzung.
+</p>
+<p>
+  Nur wenn du unter <span class="path">Einstellungen › Online &amp; Info › Fehlerprotokoll (Koop)</span> auf
+  „Kopieren“ tippst und den Text z. B. in eine Nachricht einfügst, gibst du es selbst weiter – zusammen mit
+  Gerätemodell, Android-Version, Arbeitsspeicher und App-Version. Das Protokoll wird gelöscht, wenn du
+  „Online-Konto löschen“ mit der Option für die Daten auf diesem Gerät ausführst oder die App-Daten löschst.
+</p>
+
+<h2 id="kaeufe">6. In-App-Käufe (Google Play)</h2>
+<p>
+  Das Spiel ist kostenlos. Weitere Welten, Helden und das Komplettpaket kannst du einmalig kaufen. Den Kauf wickelt
+  Google Play ab (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) – mit deinem Google-Konto
+  und der dort hinterlegten Zahlungsart. Ich erhalte keine Zahlungsdaten (z. B. Kartennummer). Google stellt mir in
+  der Play Console Bestellinformationen bereit, etwa Bestellnummer, gekauftes Produkt, Preis, Zeitpunkt und Land.
+  Die App prüft über Google Play, welche Inhalte du gekauft hast, und speichert das auf deinem Gerät.
+</p>
+<p>
+  Rechtsgrundlage ist die Erfüllung des Kaufvertrags (Art. 6 Abs. 1 lit. b DSGVO) und meine gesetzliche Pflicht,
+  Geschäftsunterlagen aufzubewahren (Art. 6 Abs. 1 lit. c DSGVO). Bestellinformationen bewahre ich so lange auf, wie
+  das Handels- und Steuerrecht es verlangt (in der Schweiz in der Regel 10 Jahre). Für die Zahlung gilt die
+  Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+</p>
+
+<h2 id="werbung">7. Freiwillige Werbeclips (Unity LevelPlay)</h2>
+<p>
+  Für Münzen kannst du freiwillig kurze Werbeclips ansehen – am Ende eines Solo-Levels oder im Titelbildschirm. Es
+  gibt keine Werbung, die sich von selbst öffnet, keine Werbung im Online-Koop und keine Werbung mehr, sobald du das
+  Komplettpaket besitzt.
+</p>
+<p>
+  Die Clips liefert Unity LevelPlay (Werbe-Vermittlung) mit dem Werbenetzwerk Unity Ads, beide von Unity
+  Technologies SF (Anschrift siehe <a href="#online-koop">Abschnitt 3</a>). Für die Werbung ist Unity –
+  anders als beim Online-Koop – eigenständig verantwortlich; es gilt die unten verlinkte Datenschutzerklärung
+  von Unity. Über das Datenschutz-Symbol in einem Werbeclip kannst du auch direkt bei Unity Einstellungen zur
+  Werbung vornehmen.
+  Wenn du einen Clip anforderst, erhalten diese Dienste Daten, um den Clip auszuliefern, abzurechnen und Betrug zu
+  verhindern: deine IP-Adresse, die Werbe-ID deines Geräts (Advertising ID), Gerätemodell, Betriebssystem, Sprache,
+  ungefährer Standort (aus der IP-Adresse), Informationen zur App sowie welche Clips du gesehen und ob du sie zu Ende
+  angesehen hast.
+</p>
+<h3>Deine Wahl: Werbeclips und personalisierte Werbung</h3>
+<p>
+  Vor dem ersten Clip fragt die App, ob du Werbeclips überhaupt erlaubst – mit dem Hinweis, dass Unity dafür Daten
+  deines Geräts einschliesslich der Werbe-ID erhält. Erst nach deinem „Ja“ startet die App die Werbe-Software; vorher
+  und nach einem „Nein“ werden keine Daten an LevelPlay oder Unity Ads gesendet. Ohne Werbung erhältst du keine
+  Münzen; Käufe bleiben möglich.
+</p>
+<p>
+  Danach fragt die App, ob du 16 Jahre oder älter bist. Bist du jünger, zeigt die App nur nicht
+  personalisierte Werbung und fragt nicht weiter. Andernfalls fragt sie, ob die Werbepartner
+  <strong>personalisierte Werbung</strong> zeigen dürfen, also Werbung, die auf deine Interessen zugeschnitten ist.
+  Deine Antwort geht an LevelPlay; dein Alter wird nicht gespeichert oder übermittelt. Sagst du Nein, siehst
+  du nur nicht personalisierte Werbung; die oben genannten Daten werden dann nur zum Ausliefern, Zählen und zur
+  Betrugsvermeidung verwendet. Deine Wahl kannst du im Shop unter „Werbe-Einwilligung“ jederzeit
+  zurücksetzen; die App fragt dich dann vor dem nächsten Clip erneut. Die Werbe-ID kannst du ausserdem in den Android-Einstellungen unter
+  <span class="path">Datenschutz › Werbung</span> zurücksetzen oder löschen.
+</p>
+<p>
+  Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO; für Nutzer in Deutschland auch § 25 Abs. 1
+  TDDDG): für Werbeclips überhaupt und – getrennt davon – für personalisierte Werbung. Du kannst sie jederzeit mit
+  Wirkung für die Zukunft widerrufen, im Shop unter „Werbe-Einwilligung“.
+  Datenschutzhinweise von Unity zur Werbung:
+  <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">unity.com/legal/game-player-and-app-user-privacy-policy</a>.
+</p>
+
+<h2 id="cloud">8. Fortschritt sichern (Google Play Games und Unity Cloud Save)</h2>
+<p>
+  Unter <span class="path">Einstellungen › Online &amp; Info › „Mit Google sichern“</span> kannst du deinen
+  Fortschritt freiwillig online sichern, um ihn auf einem neuen Handy wiederherzustellen oder auf mehreren Geräten
+  zu spielen. Ohne dieses Antippen passiert nichts davon.
+</p>
+<ul>
+  <li><strong>Anmeldung:</strong> Du meldest dich mit Google Play Games an (Google Ireland Limited, siehe oben).
+    Google übermittelt dabei deine Google-Play-Games-Spieler-ID an Unity. Ich erhalte weder deine E-Mail-Adresse
+    noch dein Passwort.</li>
+  <li><strong>Verknüpfung:</strong> Deine Online-ID (<a href="#online-koop">Abschnitt 3 a</a>) wird mit dieser
+    Google-Play-Games-ID verknüpft. Das Online-Konto ist damit nicht mehr anonym, sondern deinem Google-Play-Games-Profil
+    zugeordnet.</li>
+  <li><strong>Gesicherte Daten (Unity Cloud Save):</strong> gekaufte Welten, Helden und das Komplettpaket, deine
+    Münzen (je Gerät verdiente und ausgegebene Münzen mit der zufälligen Gerätekennung), deine Abenteuer (Held,
+    Stufe, Erfahrung, Attribute, Ausrüstung, Beutel, Schmiede, Bestzeiten), der Gegnerkompass, deine Orden
+    (Zählerstände je Gerät, erreichte Stufen, schon gesehene Stufen) sowie deine
+    gespeicherten Koop-Räume (als Gastgeber mit den Namen und Hash-Werten der Mitglieder, siehe
+    <a href="#raeume">Abschnitt 3 h</a>) bzw. deine Kopien. Nicht gesichert werden Ranglisten, Einstellungen und
+    Sprache.</li>
+  <li><strong>Wann:</strong> Nach dem ersten Mal meldet sich die App beim Start still an und gleicht den Stand beim
+    Start, eine Minute nach einer Änderung und beim Wechsel in den Hintergrund ab.</li>
+</ul>
+<p>
+  Unity verarbeitet diese Daten in meinem Auftrag als Auftragsverarbeiter (wie in <a href="#online-koop">Abschnitt 3</a>).
+  Rechtsgrundlage ist die von dir gewünschte Funktion (Art. 6 Abs. 1 lit. b DSGVO). Die Sicherung bleibt gespeichert,
+  bis du das Online-Konto löschst (siehe <a href="#loeschung">Löschung</a>); dabei wird zuerst die Sicherung und dann
+  das Konto gelöscht. Dein Google-Play-Games-Profil verwaltest du bei Google.
+</p>
+
+<h2 id="ausland">9. Übermittlung ins Ausland</h2>
+<p>
+  Unity hat seinen Sitz in den USA; Unitys Server stehen in verschiedenen Regionen, die Relay-Server in der Regel in
+  deiner Nähe. Für Übermittlungen in die USA hat Unity die Standardvertragsklauseln der EU-Kommission vereinbart
+  (Art. 46 Abs. 2 lit. c DSGVO), die auch für Übermittlungen aus der Schweiz anerkannt sind
+  (Art. 16 Abs. 2 lit. d DSG). Google stützt Übermittlungen in die USA auf das EU-US bzw. Swiss-US Data Privacy
+  Framework (Art. 45 DSGVO, Art. 16 Abs. 1 DSG) und ergänzend auf Standardvertragsklauseln.
+  Die Übermittlung von der Schweiz in die EU und umgekehrt ist durch gegenseitige Angemessenheitsentscheide
+  abgedeckt.
+</p>
+
+<h2 id="kinder">10. Kinder und Jugendliche</h2>
+<p>
+  Die App richtet sich nicht an Kinder unter 13 Jahren, und ich erhebe wissentlich keine personenbezogenen Daten
+  von Kindern unter 13 Jahren. Wenn du als Elternteil feststellst, dass dein Kind unter 13 Jahren den Online-Koop
+  oder die Kontosicherung genutzt hat, kannst du das Online-Konto in der App löschen (siehe
+  <a href="#loeschung">Löschung</a>) oder mir schreiben.
+</p>
+<p>
+  Eine Einwilligung in personalisierte Werbung kann in manchen Ländern (z. B. Deutschland) erst ab 16 Jahren selbst
+  erteilt werden. Deshalb fragt die App vor dem ersten Werbeclip nach deinem Alter: Wer angibt, jünger als 16 zu
+  sein, erhält nur nicht personalisierte Werbung (siehe <a href="#werbung">Abschnitt 7</a>).
+</p>
+
+<h2 id="rechte">11. Deine Rechte und Löschung</h2>
+<p>Du hast das Recht auf</p>
+<ul>
+  <li>Auskunft über deine Daten (Art. 15 DSGVO, Art. 25 DSG),</li>
+  <li>Berichtigung (Art. 16 DSGVO, Art. 32 DSG),</li>
+  <li>Löschung (Art. 17 DSGVO, Art. 32 DSG),</li>
+  <li>Einschränkung der Verarbeitung (Art. 18 DSGVO),</li>
+  <li>Datenübertragbarkeit (Art. 20 DSGVO, Art. 28 DSG),</li>
+  <li>Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21 DSGVO),</li>
+  <li>Widerruf einer Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO) und</li>
+  <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde: in der Schweiz beim Eidgenössischen Datenschutz- und
+    Öffentlichkeitsbeauftragten (EDÖB, <a href="https://www.edoeb.admin.ch">edoeb.admin.ch</a>), in der EU bei der
+    Behörde des Landes, in dem du wohnst oder arbeitest oder in dem der mutmassliche Verstoss stattfand (Art. 77 DSGVO).</li>
+</ul>
+<p>
+  Da ich weder deinen Namen noch deine E-Mail-Adresse kenne, kann ich Anfragen nur über deine Online-ID einem
+  Online-Konto zuordnen. Bitte nenne sie deshalb in jeder Anfrage.
+</p>
+
+<h3 id="loeschung">Online-Konto löschen</h3>
+<p>
+  <strong>In der App:</strong> <span class="path">Einstellungen › Online &amp; Info › Online-Konto löschen › „Löschen …“</span>.
+  Die App meldet sich dazu mit dem vorhandenen Anmelde-Token bei Unity an – dabei wird nie ein neues Konto
+  angelegt –, löscht zuerst eine vorhandene Fortschritts-Sicherung (Cloud Save) und dann dein Online-Konto bei Unity
+  samt Verknüpfung mit Google Play Games. Standardmässig werden dabei auch die Koop-Rangliste, das Fehlerprotokoll
+  und alle gespeicherten Koop-Räume und Kopien auf diesem Gerät gelöscht (abschaltbar). Dein übriger Spielfortschritt
+  auf dem Gerät bleibt erhalten; gekaufte Inhalte bleiben bei Google Play erhalten. Dafür ist eine Internetverbindung nötig; während einer laufenden Koop-Runde ist
+  das Löschen nicht möglich. Beim nächsten Online-Koop erhältst du eine neue Online-ID.
+</p>
+<p>
+  <strong>Per E-Mail:</strong> Schreib an <a href="mailto:magicrunandfight@gmail.com">magicrunandfight@gmail.com</a>
+  und nenne deine Online-ID
+  (<span class="path">Einstellungen › Online &amp; Info › Online-ID › „Kopieren“</span> kopiert die vollständige ID).
+  Ich lösche das Konto und eine vorhandene Sicherung dann bei Unity und bestätige dir die Löschung.
+</p>
+<p>
+  Hast du die App bereits deinstalliert oder ihre Daten gelöscht, ist die Online-ID auf deinem Gerät nicht mehr
+  vorhanden. Hast du den Fortschritt mit Google gesichert, installiere die App neu und melde dich mit demselben
+  Google-Konto an – dann kannst du das Konto wie oben in der App löschen. Ein anonymes Konto ohne Online-ID kann ich
+  keiner Person zuordnen (Art. 11 DSGVO).
+</p>
+
+<h2 id="webseite">12. Diese Webseite</h2>
+<p>
+  Diese Datenschutzerklärung wird über GitHub Pages bereitgestellt (GitHub, Inc., 88 Colin P. Kelly Jr. Street,
+  San Francisco, CA 94107, USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie deine IP-Adresse,
+  um die Seite auszuliefern und vor Angriffen zu schützen. Die Seite selbst verwendet keine Cookies, keine Skripte
+  und keine eingebundenen Inhalte Dritter. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Datenschutzerklärung
+  von GitHub:
+  <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com › GitHub General Privacy Statement</a>.
+</p>
+
+<h2 id="aenderungen">13. Änderungen und Stand</h2>
+<p>
+  Ich passe diese Erklärung an, wenn sich die App oder die rechtlichen Anforderungen ändern. Es gilt die jeweils
+  auf dieser Seite veröffentlichte Fassung. Bei wesentlichen Änderungen zeigt die App den Hinweis zum Online-Koop
+  erneut an.
+</p>
+<p class="small">Fassung 3 · Stand: 5. Oktober 2026 (neuer App-Name „Magic Brawl Odyssey“; neu: Orden auf dem Gerät und in der Sicherung)</p>
+
+<section class="en" id="english" lang="en">
+<h2>Privacy policy for Magic Brawl Odyssey – short English version</h2>
+<p class="small">This is a summary. The German version above is authoritative.</p>
+<ul>
+  <li><strong>Controller:</strong> Jan-Niklas Dohm, Unterdorfstrasse 11, 3510 Konolfingen, Switzerland,
+    e-mail: <a href="mailto:magicrunandfight@gmail.com">magicrunandfight@gmail.com</a>. The Swiss Federal Act on
+    Data Protection (FADP) applies, and the GDPR for users in the EU/EEA.</li>
+  <li><strong>Offline by default:</strong> solo play works without internet; no chat. Progress (incl. orders/awards), coins, purchases,
+    your chosen name, settings, your personalised-ads choice, local leaderboards (the co-op leaderboard also holds
+    co-players' names), the co-op error log, your Online ID, Unity's session token, a random installation ID and a
+    random device ID are stored on your device.</li>
+  <li><strong>Online co-op (optional, never with ads):</strong> uses Unity Gaming Services (Unity Technologies SF, USA,
+    as my processor): <em>Authentication</em> creates a random player ID (Online ID); <em>Relay</em> forwards the
+    encrypted game traffic and processes your IP address, connection data and approximate location; <em>Lobby</em>
+    keeps a short-lived private room entry. Co-players receive your chosen name, hero, inputs, game state, your hero's
+    level and gear in that room, app version and your Online ID; the host also receives which heroes you own and
+    whether you own the complete bundle – never your IP address.</li>
+  <li><strong>Saved co-op rooms:</strong> every co-op room is saved on the host's device (and in the host's progress
+    backup, if used): for each member the chosen name, the hero and its progress in that room, a random member ID and
+    a hash of the member's Online ID – never the Online ID itself. Members keep a copy (room and host name, last room
+    code, own hero). Deleting the room removes the members' names and hashes; the host can also delete a single
+    member, and you remove your copy under “Deine Räume” › “Entfernen”.</li>
+  <li><strong>In-app purchases:</strong> processed by Google Play; I never receive payment details, only order
+    information (order ID, product, price, time, country), kept as required by accounting law.</li>
+  <li><strong>Optional rewarded ads:</strong> Unity LevelPlay with Unity Ads, only when you choose to watch a clip for
+    coins (never in co-op, none after buying the bundle). They process your IP address, advertising ID, device and app
+    information and ad interactions. The app first asks whether you allow ad clips at all (the ad
+    SDK only starts after “yes”), then whether you are 16 or older (under 16: only
+    non-personalised ads); personalised ads only with your consent, asked before the first clip and resettable in the
+    shop; you can also reset or delete the advertising ID in Android settings.</li>
+  <li><strong>Optional progress backup:</strong> “Mit Google sichern” signs you in with Google Play Games, links your
+    Online ID to your Play Games player ID and stores owned content, coins, your adventures incl. gear and best times,
+    the enemy compass, your orders (award counters per device, reached tiers) and your saved co-op rooms or copies
+    in Unity Cloud Save until you delete your online
+    account.</li>
+  <li><strong>Crash data:</strong> the app sends no crash or diagnostic reports itself. Google Play provides
+    aggregated Android vitals if you allowed this on your device.</li>
+  <li><strong>Legal bases:</strong> Art. 6(1)(b) GDPR (features you request, purchases), Art. 6(1)(a) GDPR
+    (ad clips and personalised ads), Art. 6(1)(c) GDPR (accounting records), Art. 6(1)(f) GDPR (security). Transfers to the USA rely on Standard Contractual Clauses (Unity) and the EU-US / Swiss-US
+    Data Privacy Framework (Google).</li>
+  <li><strong>Children:</strong> the app is not directed at children under 13.</li>
+  <li><strong>Your rights:</strong> access, rectification, erasure, restriction, portability, objection, withdrawal of
+    consent and a complaint to a supervisory authority (Switzerland: FDPIC / EDÖB). Delete your online account and
+    backup in the app under <span class="path">Einstellungen › Online &amp; Info › Online-Konto löschen</span>
+    (Settings › Online &amp; Info › Delete online account), or e-mail me with your Online ID.</li>
+  <li><strong>This page</strong> is hosted on GitHub Pages (GitHub, Inc., USA), which processes your IP address to
+    deliver it. No cookies, no scripts.</li>
+</ul>
+<p class="small">Version 3 · Last updated: 5 October 2026 (new app name “Magic Brawl Odyssey”, formerly “Arkambo” / “Magic Run &amp; Fight”; new: orders/awards on the device and in the backup)</p>
+</section>
+
+</main>
+</body>
+</html>
