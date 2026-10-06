@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <!--
   Datenschutzerklärung Magic Brawl Odyssey (am 05.10.2026 kurz "Arkambo", davor "Magic Run & Fight"; Name unter dem
-  Android-Symbol "Brawl Odyssey"), Fassung 3 (Stand 05.10.2026: neuer App-Name, Orden, am selben Tag ergänzt um
-  den E-Mail-Kontakt support@magicbrawlodyssey.com über Cloudflare Email Routing statt der früheren Gmail-Adresse;
+  Android-Symbol "Brawl Odyssey"), Fassung 4 (Stand 05.10.2026: Kaufmeldungen von Unity IAP an Unity in Abschnitt 6
+  (PurchaseEventEmitter, com.unity.purchasing 5.4.3, unter Unity 6000.6 nicht abschaltbar), Abschnitt 4 präzisiert,
+  Daten der Werbe-Software in Abschnitt 7 nach den Google-Play-Datensicherheitstabellen von LevelPlay und Unity Ads,
+  Fortschritts-Sicherung in Abschnitt 8 als "noch nicht verfügbar" markiert, weil MRF_CLOUD in 1.0 aus ist und das
+  Play-Games-Plugin entfernt wird; Werbe-Einwilligung nach AdService/AdConsent: Altersfrage zuerst, unter 16 keine
+  Clips und kein Werbe-SDK, kein SDK-Start bei Komplettpaket / allem gekauft; Koop-Hinweis in der App Version 3;
+  Fassung 3 vom selben Tag: neuer App-Name, Orden, ergänzt um den E-Mail-Kontakt
+  support@magicbrawlodyssey.com über Cloudflare Email Routing statt der früheren Gmail-Adresse;
   Fassung 2 vom 03.10.2026: gespeicherte Koop-Räume; Fassung 1 vom 30.09.2026, ergänzt 01.10.2026).
   Von Claude nach dem Code-Stand entworfen, von Jan entschieden - keine Rechtsberatung.
   Veröffentlicht unter https://jnd1992.github.io/magicbrawlodyssey-legal/datenschutz.html (Repo JND1992/magicbrawlodyssey-legal, seit
@@ -77,14 +83,18 @@
 <main>
 
 <h1>Datenschutzerklärung für die App „Magic Brawl Odyssey“</h1>
-<p class="meta">Fassung 3 · Stand: 5. Oktober 2026 · <a href="#english">English version below</a></p>
+<p class="meta">Fassung 4 · Stand: 5. Oktober 2026 · <a href="#english">English version below</a></p>
 
 <p>
   Diese Erklärung beschreibt, welche Daten die Android-App „Magic Brawl Odyssey“ (früher „Arkambo“ bzw.
   „Magic Run &amp; Fight“) verarbeitet, wofür und
-  welche Rechte du hast. Kurz gesagt: Das Solo-Spiel funktioniert offline. Daten gehen über das Internet, wenn du
-  den Online-Koop nutzt, etwas kaufst, freiwillig einen Werbeclip ansiehst oder deinen Fortschritt mit Google
-  sicherst. Einen Chat gibt es nicht.
+  welche Rechte du hast. Kurz gesagt: Das Solo-Spiel funktioniert offline. Bei jedem Start fragt die App bei Google
+  Play die Preise und deine Käufe ab (<a href="#kaeufe">Abschnitt 6</a>). Weitere Daten gehen über das Internet, wenn
+  du den Online-Koop nutzt oder dein Online-Konto löschst (<a href="#online-koop">Abschnitt 3</a>,
+  <a href="#loeschung">Abschnitt 11</a>), etwas kaufst (<a href="#kaeufe">Abschnitt 6</a>) oder freiwillig
+  Werbeclips erlaubst (dann bei jedem Spielstart, <a href="#werbung">Abschnitt 7</a>). Das Sichern deines
+  Fortschritts mit Google gibt es noch nicht; es kommt erst mit einem späteren Update
+  (siehe <a href="#cloud">Abschnitt 8</a>). Einen Chat gibt es nicht.
 </p>
 
 <nav aria-label="Inhalt">
@@ -93,11 +103,11 @@
     <li><a href="#verantwortlicher">Verantwortlicher, Kontakt und anwendbares Recht</a></li>
     <li><a href="#ueberblick">Überblick und Daten auf deinem Gerät</a></li>
     <li><a href="#online-koop">Online-Koop (Unity Gaming Services)</a></li>
-    <li><a href="#diagnose">Absturzdaten (Google Play)</a></li>
+    <li><a href="#diagnose">Absturz- und Diagnosedaten</a></li>
     <li><a href="#fehlerprotokoll">Lokales Fehlerprotokoll</a></li>
-    <li><a href="#kaeufe">In-App-Käufe (Google Play)</a></li>
+    <li><a href="#kaeufe">In-App-Käufe (Google Play und Unity IAP)</a></li>
     <li><a href="#werbung">Freiwillige Werbeclips (Unity LevelPlay)</a></li>
-    <li><a href="#cloud">Fortschritt sichern (Google Play Games und Unity Cloud Save)</a></li>
+    <li><a href="#cloud">Fortschritt sichern (Google Play Games und Unity Cloud Save) – noch nicht verfügbar</a></li>
     <li><a href="#ausland">Übermittlung ins Ausland</a></li>
     <li><a href="#kinder">Kinder und Jugendliche</a></li>
     <li><a href="#rechte">Deine Rechte und Löschung</a></li>
@@ -155,7 +165,10 @@
   <li>Das Solo-Spiel funktioniert ohne Internet. Du brauchst kein Benutzerkonto, keinen Namen und keine E-Mail-Adresse.</li>
   <li>Die App fragt keine Berechtigungen für Standort, Kontakte, Kamera, Mikrofon oder Dateien an. Sie nutzt den
     Internetzugang (inklusive Abfrage, ob eine Verbindung besteht), die Vibration, die Google-Play-Kaufabwicklung und
-    für die Werbung die Werbe-ID deines Geräts (siehe <a href="#werbung">Abschnitt 7</a>).</li>
+    für die Werbung die Werbe-ID deines Geräts sowie die Werbeschnittstellen von Android (Privacy Sandbox: Themen und
+    Attribution; siehe <a href="#werbung">Abschnitt 7</a>). Eingebundene Software-Bausteine bringen ausserdem
+    technische Berechtigungen für Hintergrundaufgaben mit (Gerät kurz wach halten, nach einem Neustart fortsetzen,
+    Vordergrunddienst); sie greifen damit auf keine persönlichen Inhalte zu.</li>
 </ul>
 
 <h3>Was auf deinem Gerät gespeichert wird</h3>
@@ -165,20 +178,22 @@
     oder geschaffte Level, erreichte Stufen, Ordenspunkte und Rang; je Gerät mit der zufälligen Gerätekennung),</li>
   <li>deine Münzen, gekaufte Welten, Helden und das Komplettpaket sowie eine zufällige Gerätekennung, mit der die Münzen
     mehrerer Geräte beim Sichern auseinandergehalten werden,</li>
-  <li>dein selbst gewählter Spielername, deine Einstellungen (z. B. Ton, Steuerung, Sprache) und deine Entscheidung
-    zur personalisierten Werbung,</li>
+  <li>dein selbst gewählter Spielername, deine Einstellungen (z. B. Ton, Steuerung, Sprache) und deine Antworten auf
+    die Fragen zur Werbung (ob du unter 16 bist, ob du Werbeclips erlaubst und ob personalisiert, siehe
+    <a href="#werbung">Abschnitt 7</a>),</li>
   <li>lokale Ranglisten; die Koop-Rangliste enthält auch die Namen deiner Mitspieler aus gewonnenen Koop-Runden,</li>
   <li>das Koop-Fehlerprotokoll (siehe <a href="#fehlerprotokoll">Abschnitt 5</a>),</li>
   <li>gespeicherte Koop-Räume: als Gastgeber deine Räume mit den Namen der Mitglieder und einem Hash-Wert ihrer
     Online-ID, als Mitglied eine Kopie (siehe <a href="#raeume">Abschnitt 3 h</a>),</li>
-  <li>für den Online-Koop und die Kontosicherung: deine Online-ID, das Anmelde-Token von Unity, eine zufällige
+  <li>für den Online-Koop: deine Online-ID, das Anmelde-Token von Unity, eine zufällige
     Installationskennung und der zuletzt verwendete Raum-Code.</li>
 </ul>
 <p>
-  Auf diese Daten habe ich keinen Zugriff, ausser du sicherst deinen Fortschritt (siehe <a href="#cloud">Abschnitt 8</a>).
+  Auf diese Daten habe ich keinen Zugriff (die Online-Sicherung aus <a href="#cloud">Abschnitt 8</a> gibt es noch
+  nicht).
   Du löschst sie, indem du die App deinstallierst oder in den Android-Einstellungen unter
   <span class="path">Apps › Brawl Odyssey › Speicher › Daten löschen</span> die App-Daten löschst. Dabei gehen
-  Fortschritt und Münzen verloren, sofern du sie nicht gesichert hast. Gekaufte Inhalte stellt Google Play bei der
+  Fortschritt und Münzen verloren, sofern Android sie nicht gesichert hat (siehe unten). Gekaufte Inhalte stellt Google Play bei der
   nächsten Anmeldung mit demselben Google-Konto wieder her.
 </p>
 <p>
@@ -192,7 +207,9 @@
   Der Online-Koop ist freiwillig. Erst wenn du im Koop-Bildschirm einen Raum erstellst oder öffnest oder
   „Beitreten“ antippst – oder die App eine laufende Koop-Runde nach einer Unterbrechung automatisch wieder
   verbindet – nimmt die App dafür Verbindung zu den Online-Diensten auf. Vor dem ersten Mal zeigt die App dazu
-  einen kurzen Hinweis.
+  einen kurzen Hinweis, der die wichtigsten Punkte dieses Abschnitts zusammenfasst (auch, dass Unity IAP Käufe nach
+  dem Online-Koop mit deiner Online-ID meldet, siehe <a href="#kaufmeldungen">Abschnitt 6</a>); über „Datenschutz“
+  kannst du dort diese Erklärung öffnen.
   Im Koop wird nie Werbung gezeigt.
 </p>
 <p>
@@ -210,8 +227,10 @@
   deinem Gerät wird ein Anmelde-Token gespeichert, damit du beim nächsten Mal dieselbe Online-ID behältst. Bei der
   Anmeldung übermittelt die App ausserdem eine zufällige Kennung dieser App-Installation. Wie bei jeder
   Internetverbindung verarbeitet Unity dabei deine IP-Adresse. Den Anfang deiner Online-ID siehst du unter
-  <span class="path">Einstellungen › Online &amp; Info</span>. Solange du die Kontosicherung
-  (<a href="#cloud">Abschnitt 8</a>) nicht nutzt, ist dieses Konto anonym.
+  <span class="path">Einstellungen › Online &amp; Info</span>. Dieses Konto ist nicht mit deinem Namen, deiner
+  E-Mail-Adresse oder deinem Google-Konto verknüpft (das ändert sich erst mit der Fortschritts-Sicherung aus
+  <a href="#cloud">Abschnitt 8</a>). Kaufst du etwas, nachdem du seit dem Start der App den Online-Koop genutzt hast,
+  erhält Unity die Online-ID aber zusammen mit der Kaufmeldung (<a href="#kaufmeldungen">Abschnitt 6</a>).
 </p>
 
 <h3>b) Spielverbindung (Unity Relay)</h3>
@@ -291,18 +310,18 @@
   seinem Spielstand in diesem Raum (z. B. Stufe, Erfahrung, Ausrüstung), eine zufällige Mitglieds-Kennung und einen
   <strong>Hash-Wert der Online-ID</strong>. Die Online-ID selbst wird nicht gespeichert, nur dieser aus ihr berechnete
   Prüfwert, aus dem sich die Online-ID nicht ablesen lässt. Er dient nur dazu, ein Mitglied beim nächsten Beitritt
-  wiederzuerkennen. Nutzt der Gastgeber die Kontosicherung (<a href="#cloud">Abschnitt 8</a>), liegen dieselben Daten
-  auch in seiner Sicherung bei Unity Cloud Save.
+  wiederzuerkennen. Sobald es die Fortschritts-Sicherung gibt und der Gastgeber sie nutzt
+  (<a href="#cloud">Abschnitt 8</a>), liegen dieselben Daten auch in seiner Sicherung bei Unity Cloud Save.
 </p>
 <p>
   Die App eines Mitglieds speichert eine Kopie: den Namen des Raums und des Gastgebers, den zuletzt verwendeten
-  Raum-Code, die eigene Mitglieds-Kennung und den eigenen Helden im Raum; mit der Kontosicherung auch in der eigenen
-  Sicherung.
+  Raum-Code, die eigene Mitglieds-Kennung und den eigenen Helden im Raum; mit der Fortschritts-Sicherung auch in der
+  eigenen Sicherung.
 </p>
 <ul>
   <li><strong>Löschen:</strong> Löscht der Gastgeber den Raum (<span class="path">Koop › Deine Räume › „Löschen“</span>),
-    werden Namen und Hash-Werte aller Mitglieder auf seinem Gerät gelöscht und beim nächsten Abgleich auch in seiner
-    Sicherung. Ein einzelnes fehlendes Mitglied kann der Gastgeber in der Lobby löschen („Mitglied löschen“). Deine
+    werden Namen und Hash-Werte aller Mitglieder auf seinem Gerät gelöscht (sobald es die Fortschritts-Sicherung gibt,
+    beim nächsten Abgleich auch in seiner Sicherung). Ein einzelnes fehlendes Mitglied kann der Gastgeber in der Lobby löschen („Mitglied löschen“). Deine
     Kopie entfernst du unter <span class="path">Koop › Deine Räume › „Entfernen“</span>; deine Daten im Raum des
     Gastgebers kann nur er löschen – bitte ihn darum.</li>
   <li><strong>Speicherdauer:</strong> bis der Gastgeber den Raum oder das Mitglied löscht bzw. du deine Kopie
@@ -311,9 +330,18 @@
     Spielstand des Raums.</li>
 </ul>
 
-<h2 id="diagnose">4. Absturzdaten (Google Play)</h2>
+<h2 id="diagnose">4. Absturz- und Diagnosedaten</h2>
 <p>
-  Die App selbst sendet keine Absturz- oder Diagnoseberichte. Wenn du in den Android-Einstellungen das Senden von
+  Der Code des Spiels selbst sendet keine Absturz- oder Diagnoseberichte, und die Diagnosefunktion der Unity-Engine
+  (Unity Diagnostics) ist ausgeschaltet. Die eingebundenen Software-Bausteine (SDKs) können aber technische Daten
+  wie Diagnose-, Fehler- und Absturzdaten senden, wenn du die jeweilige Funktion nutzt: die Unity-Dienste im
+  Online-Koop (<a href="#online-koop">Abschnitt 3</a>) und beim Löschen deines Online-Kontos
+  (<a href="#loeschung">Abschnitt 11</a>), die Kauf-Software Unity IAP bei Käufen, im Online-Koop und beim Löschen
+  des Online-Kontos (<a href="#kaufmeldungen">Abschnitt 6</a>) und die Werbe-Software von LevelPlay und Unity Ads,
+  nachdem du Werbeclips erlaubt hast (<a href="#werbung">Abschnitt 7</a>).
+</p>
+<p>
+  Wenn du in den Android-Einstellungen das Senden von
   Nutzungs- und Diagnosedaten erlaubt hast, stellt Google mir zusammengefasste Absturz- und Leistungsberichte in der
   Google Play Console bereit („Android Vitals“). Dafür ist Google verantwortlich (Google Ireland Limited, Gordon House,
   Barrow Street, Dublin 4, Irland); Datenschutzerklärung von Google:
@@ -333,13 +361,15 @@
   „Online-Konto löschen“ mit der Option für die Daten auf diesem Gerät ausführst oder die App-Daten löschst.
 </p>
 
-<h2 id="kaeufe">6. In-App-Käufe (Google Play)</h2>
+<h2 id="kaeufe">6. In-App-Käufe (Google Play und Unity IAP)</h2>
 <p>
   Das Spiel ist kostenlos. Weitere Welten, Helden und das Komplettpaket kannst du einmalig kaufen. Den Kauf wickelt
   Google Play ab (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) – mit deinem Google-Konto
   und der dort hinterlegten Zahlungsart. Ich erhalte keine Zahlungsdaten (z. B. Kartennummer). Google stellt mir in
   der Play Console Bestellinformationen bereit, etwa Bestellnummer, gekauftes Produkt, Preis, Zeitpunkt und Land.
-  Die App prüft über Google Play, welche Inhalte du gekauft hast, und speichert das auf deinem Gerät.
+  Bei jedem Start verbindet sich die App mit der Kaufabwicklung von Google Play, ruft die aktuellen Preise ab und
+  prüft, welche Inhalte du gekauft hast (ebenso, wenn du im Shop „Käufe wiederherstellen“ antippst); das Ergebnis speichert sie auf deinem Gerät. Dafür erhält Google die Anfrage
+  zusammen mit deinem Google-Konto; an Unity geht dabei nichts.
 </p>
 <p>
   Rechtsgrundlage ist die Erfüllung des Kaufvertrags (Art. 6 Abs. 1 lit. b DSGVO) und meine gesetzliche Pflicht,
@@ -348,38 +378,121 @@
   Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
 </p>
 
+<h3 id="kaufmeldungen">Kaufmeldungen an Unity (Unity IAP)</h3>
+<p>
+  Die Verbindung zu Google Play stellt die Kauf-Software „Unity In-App Purchasing“ (Unity IAP) von Unity Technologies SF
+  her (Anschrift siehe <a href="#online-koop">Abschnitt 3</a>). Sie meldet jeden Kaufvorgang an Unity: wenn du einen
+  Kauf startest, wenn Google Play ihn als bezahlt meldet, wenn er abgeschlossen ist und wenn er fehlschlägt oder du ihn
+  abbrichst – ebenso, wenn die App beim Start einen noch nicht abgeschlossenen Kauf nachträglich verarbeitet. Das
+  geschieht auch ohne Online-Koop. Eine solche Meldung enthält:
+</p>
+<ul>
+  <li>das Produkt (Kennung, Name, Beschreibung, Preis und Währung) und die Transaktions-ID,</li>
+  <li>nach der Bezahlung den Kaufbeleg von Google Play (u. a. Bestellnummer, Kaufzeitpunkt und Kauf-Token mit
+    Signatur), bei einem Fehlschlag den Grund (z. B. „abgebrochen“),</li>
+  <li>Gerätemodell, Android-Version, die auf dem Gerät eingestellten Sprachen, die Grösse des Gerätespeichers und den
+    Zeitpunkt des letzten Gerätestarts,</li>
+  <li>App-Paket und App-Version, den Zeitpunkt der ersten Installation, die Art der Installation (z. B. Store- oder
+    Entwicklerversion) sowie die Versionen von Unity und der Kauf-Software,</li>
+  <li>zufällige Kennungen der Meldung, des Kaufvorgangs und der App-Sitzung; hast du seit dem Start der App den
+    Online-Koop genutzt oder dein Online-Konto gelöscht, zusätzlich die Installationskennung von Unity und – solange
+    du angemeldet bist – deine Online-ID.</li>
+</ul>
+<p>
+  Die Werbe-ID deines Geräts ist nicht dabei. Wie bei jeder Internetverbindung erhält Unity deine IP-Adresse; laut
+  Unity wird dabei auch das Land verarbeitet. Ausserdem meldet die Kauf-Software jede Anmeldung bei Unity (im
+  Online-Koop und beim Löschen deines Online-Kontos) an Unity (mit denselben Geräte- und App-Angaben, der
+  Installationskennung und deiner Online-ID, aber ohne Produkt und Kauf). Laut Unity verarbeitet Unity IAP zudem
+  Absturz-, Diagnose- und Leistungsdaten der Kauf-Software; diese sendet sie erst, wenn die App die Unity-Dienste
+  gestartet hat (für den Online-Koop oder das Löschen des Online-Kontos).
+</p>
+<p>
+  Die Meldungen dienen dazu, die Kaufabwicklung zu überwachen und Fehler dabei zu erkennen.
+  Sie sind in der Kauf-Software fest eingebaut und lassen sich in der verwendeten Version nicht abschalten; ohne Kauf,
+  ohne Online-Koop und ohne das Löschen deines Online-Kontos sendet die Kauf-Software nichts davon an Unity. Unity
+  verarbeitet diese Daten in meinem Auftrag als Auftragsverarbeiter (wie in <a href="#online-koop">Abschnitt 3</a>).
+  Soweit Unity Kauf- und Abrechnungsdaten für eigene Zwecke nutzt (laut Unity für interne Finanzberichte und
+  Prüfungen, gesetzliche Pflichten, Sicherheitsüberwachung und Betrugsvermeidung), ist Unity dafür selbst
+  verantwortlich; dafür gilt die Datenschutzerklärung von Unity. Laut Unity werden Service-Protokolle 90 Tage
+  aufbewahrt, gespeicherte Bestelldaten, bis ihre Löschung verlangt wird. Rechtsgrundlage ist mein berechtigtes
+  Interesse an einer zuverlässigen Kaufabwicklung und daran, Fehler dabei zu erkennen (Art. 6 Abs. 1 lit. f DSGVO).
+  Für Nutzer in Deutschland: Soweit die Kauf-Software dafür Angaben aus deinem Gerät ausliest, stütze ich das auf
+  § 25 Abs. 2 Nr. 2 TDDDG, weil die Überwachung und Fehlererkennung für die von dir gewünschte Kaufabwicklung unbedingt
+  erforderlich ist. Du kannst dem widersprechen (<a href="#rechte">Abschnitt 11</a>); verhindern lassen
+  sich die Meldungen in dieser Version aber nur, indem du nichts kaufst und den Online-Koop nicht nutzt. Auf deinen
+  Wunsch leite ich eine Auskunfts- oder Löschanfrage zu deinen Kaufmeldungen an Unity weiter. Zur Übermittlung in
+  die USA siehe <a href="#ausland">Abschnitt 9</a>. Datenschutzhinweise von Unity:
+  <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>.
+</p>
+
 <h2 id="werbung">7. Freiwillige Werbeclips (Unity LevelPlay)</h2>
 <p>
   Für Münzen kannst du freiwillig kurze Werbeclips ansehen – am Ende eines Solo-Levels oder im Titelbildschirm. Es
-  gibt keine Werbung, die sich von selbst öffnet, keine Werbung im Online-Koop und keine Werbung mehr, sobald du das
-  Komplettpaket besitzt.
+  gibt keine Werbung, die sich von selbst öffnet, keine Werbung im Online-Koop, keine Werbeclips für Spieler unter
+  16 Jahren und keine Werbung mehr, sobald du das Komplettpaket oder alle Welten und Helden besitzt.
 </p>
 <p>
   Die Clips liefert Unity LevelPlay (Werbe-Vermittlung) mit dem Werbenetzwerk Unity Ads, beide von Unity
-  Technologies SF (Anschrift siehe <a href="#online-koop">Abschnitt 3</a>). Für die Werbung ist Unity –
-  anders als beim Online-Koop – eigenständig verantwortlich; es gilt die unten verlinkte Datenschutzerklärung
-  von Unity. Über das Datenschutz-Symbol in einem Werbeclip kannst du auch direkt bei Unity Einstellungen zur
-  Werbung vornehmen.
-  Wenn du einen Clip anforderst, erhalten diese Dienste Daten, um den Clip auszuliefern, abzurechnen und Betrug zu
-  verhindern: deine IP-Adresse, die Werbe-ID deines Geräts (Advertising ID), Gerätemodell, Betriebssystem, Sprache,
-  ungefährer Standort (aus der IP-Adresse), Informationen zur App sowie welche Clips du gesehen und ob du sie zu Ende
-  angesehen hast.
+  Technologies SF (Anschrift siehe <a href="#online-koop">Abschnitt 3</a>). Für das Erheben der unten genannten Daten in der
+  App und ihre Übermittlung an Unity bin ich mitverantwortlich, weil ich die Werbe-Software eingebunden habe. Für alles,
+  was Unity danach mit den Daten macht, ist Unity – anders als beim Online-Koop – eigenständig verantwortlich; dafür
+  gilt die unten verlinkte Datenschutzerklärung von Unity. Deine Rechte kannst du bei mir oder direkt bei Unity
+  geltend machen. Über das Datenschutz-Symbol in einem Werbeclip kannst du auch direkt bei Unity Einstellungen zur
+  Werbung vornehmen, die über dein Gerät gesammelten Werbedaten einsehen und ihre Löschung verlangen.
+  Hast du Werbeclips erlaubt (siehe unten), initialisiert die App die Werbe-Software bei jedem Spielstart und lädt
+  einen Clip vorab – nicht aber, wenn du das Komplettpaket oder schon alle Welten und Helden besitzt. Dafür wartet
+  sie nach dem Start den Abgleich deiner Käufe mit Google Play ab (<a href="#kaeufe">Abschnitt 6</a>), damit auch
+  ein auf einem anderen Gerät gekauftes Komplettpaket zählt. Dabei und wenn du
+  einen Clip ansiehst, erhalten diese Dienste Daten, um Clips auszuliefern, abzurechnen und auszuwerten und um Betrug
+  zu verhindern. Nach den Angaben von Unity (Datenschutzerklärung sowie Angaben zur Datensicherheit bei Google Play
+  für LevelPlay und Unity Ads) sind das:
 </p>
-<h3>Deine Wahl: Werbeclips und personalisierte Werbung</h3>
+<ul>
+  <li>deine IP-Adresse und dein daraus abgeleiteter ungefährer Standort,</li>
+  <li>die Werbe-ID deines Geräts (Advertising ID) und weitere Geräte- und Nutzerkennungen der Werbe-Software,</li>
+  <li>auf Geräten mit den Werbeschnittstellen von Android (Privacy Sandbox) gegebenenfalls von Android ermittelte
+    Interessen-Themen und Attributionsdaten; du kannst sie in den Android-Einstellungen unter
+    <span class="path">Datenschutz › Werbung</span> ausschalten,</li>
+  <li>Angaben zu Gerät und App, z. B. Gerätemodell, Betriebssystem, Sprache und Informationen zur App,</li>
+  <li>deine Interaktionen mit der Werbung: welche Clips du gesehen und ob du sie zu Ende angesehen hast und was du
+    im Clip antippst,</li>
+  <li>technische Diagnosedaten der Werbe-Software,</li>
+  <li>laut Unity Ads ausserdem Angaben zu Käufen (Kaufverlauf).</li>
+</ul>
 <p>
-  Vor dem ersten Clip fragt die App, ob du Werbeclips überhaupt erlaubst – mit dem Hinweis, dass Unity dafür Daten
-  deines Geräts einschliesslich der Werbe-ID erhält. Erst nach deinem „Ja“ startet die App die Werbe-Software; vorher
-  und nach einem „Nein“ werden keine Daten an LevelPlay oder Unity Ads gesendet. Ohne Werbung erhältst du keine
-  Münzen; Käufe bleiben möglich.
+  Die Funktion „Acquire Optimization“, mit der Unity Ads zusätzlich erfassen würde, wann und wie lange du die App
+  nutzt, habe ich nicht eingeschaltet. Laut diesen Angaben gibt Unity den ungefähren Standort, die Kennungen und deine
+  Interaktionen mit der Werbung (bei Unity Ads auch den Kaufverlauf) an Werbepartner weiter; Näheres steht in der
+  Datenschutzerklärung von Unity.
 </p>
+<h3>Deine Wahl: Alter, Werbeclips und personalisierte Werbung</h3>
 <p>
-  Danach fragt die App, ob du 16 Jahre oder älter bist. Bist du jünger, zeigt die App nur nicht
-  personalisierte Werbung und fragt nicht weiter. Andernfalls fragt sie, ob die Werbepartner
-  <strong>personalisierte Werbung</strong> zeigen dürfen, also Werbung, die auf deine Interessen zugeschnitten ist.
-  Deine Antwort geht an LevelPlay; dein Alter wird nicht gespeichert oder übermittelt. Sagst du Nein, siehst
-  du nur nicht personalisierte Werbung; die oben genannten Daten werden dann nur zum Ausliefern, Zählen und zur
-  Betrugsvermeidung verwendet. Deine Wahl kannst du im Shop unter „Werbe-Einwilligung“ jederzeit
-  zurücksetzen; die App fragt dich dann vor dem nächsten Clip erneut. Die Werbe-ID kannst du ausserdem in den Android-Einstellungen unter
+  Möchtest du zum ersten Mal einen Clip ansehen, stellt die App vorher bis zu drei kurze Fragen. Vor diesen Fragen
+  initialisiert die App die Werbe-Software nicht und sendet keine Daten an LevelPlay oder Unity Ads.
+</p>
+<ol>
+  <li><strong>Bist du 16 Jahre oder älter?</strong> Bist du jünger, gibt es keine Werbeclips und keine Münzen aus
+    Clips. Die App initialisiert die Werbe-Software dann nie und sendet keine Daten an LevelPlay oder Unity Ads; Käufe
+    bleiben möglich. Gespeichert wird nur diese Antwort, nicht dein Alter.</li>
+  <li><strong>Möchtest du Werbeclips erlauben?</strong> Die App weist dabei darauf hin, dass Unity dafür Daten
+    deines Geräts einschliesslich der Werbe-ID erhält und auch selbst nutzt; über „Datenschutz“ kannst du dort diese
+    Erklärung öffnen. Sagst du Nein, gibt es keine Werbeclips und keine Münzen aus
+    Clips, und die Werbe-Software wird nicht initialisiert; Käufe bleiben möglich. Erst nach deinem „Ja“
+    initialisiert die App die Werbe-Software – sofort und danach bei jedem Spielstart, solange du nicht alles
+    besitzt.</li>
+  <li><strong>Dürfen die Werbepartner personalisierte Werbung zeigen</strong>, also Werbung, die auf deine Interessen
+    zugeschnitten ist? Deine Antwort geht an LevelPlay. Sagst du Nein, zeigt Unity laut eigenen Angaben nur nicht
+    personalisierte Werbung und verwendet die oben genannten Daten dann nur zum Ausliefern, Zählen und Auswerten der
+    Werbung und zur Betrugsvermeidung.</li>
+</ol>
+<p>
+  Deine Antworten kannst du im Shop unter „Werbe-Einwilligung“ jederzeit zurücksetzen; die App fragt dich dann vor
+  dem nächsten Clip alles erneut, beginnend mit dem Alter. Ab dem Zurücksetzen lädt und zeigt die App sofort keine
+  Clips mehr, bis du neu geantwortet hast, und meldet der Werbe-Software, dass keine Einwilligung in personalisierte
+  Werbung mehr besteht. Eine bereits laufende Werbe-Software lässt sich technisch erst mit dem Beenden der App
+  stoppen; ab dem nächsten Start initialisiert die App sie nur nach einem neuen „Ja“. Dasselbe gilt, wenn du das
+  Komplettpaket oder die letzten Welten und Helden kaufst: ab sofort keine Clips mehr, ab dem nächsten Start wird die
+  Werbe-Software nicht mehr initialisiert. Die Werbe-ID kannst du ausserdem in den Android-Einstellungen unter
   <span class="path">Datenschutz › Werbung</span> zurücksetzen oder löschen.
 </p>
 <p>
@@ -390,7 +503,12 @@
   <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">unity.com/legal/game-player-and-app-user-privacy-policy</a>.
 </p>
 
-<h2 id="cloud">8. Fortschritt sichern (Google Play Games und Unity Cloud Save)</h2>
+<h2 id="cloud">8. Fortschritt sichern (Google Play Games und Unity Cloud Save) – noch nicht verfügbar</h2>
+<p>
+  <strong>Noch nicht verfügbar – wird erst mit einem späteren Update angeboten.</strong> Die aktuelle Version der App
+  enthält diese Funktion nicht: Sie meldet dich nicht bei Google Play Games an und sendet keine Daten an Unity
+  Cloud Save. Die folgende Beschreibung gilt erst ab dem Update, das die Funktion bringt.
+</p>
 <p>
   Unter <span class="path">Einstellungen › Online &amp; Info › „Mit Google sichern“</span> kannst du deinen
   Fortschritt freiwillig online sichern, um ihn auf einem neuen Handy wiederherzustellen oder auf mehreren Geräten
@@ -401,8 +519,7 @@
     Google übermittelt dabei deine Google-Play-Games-Spieler-ID an Unity. Ich erhalte weder deine E-Mail-Adresse
     noch dein Passwort.</li>
   <li><strong>Verknüpfung:</strong> Deine Online-ID (<a href="#online-koop">Abschnitt 3 a</a>) wird mit dieser
-    Google-Play-Games-ID verknüpft. Das Online-Konto ist damit nicht mehr anonym, sondern deinem Google-Play-Games-Profil
-    zugeordnet.</li>
+    Google-Play-Games-ID verknüpft. Das Online-Konto ist damit deinem Google-Play-Games-Profil zugeordnet.</li>
   <li><strong>Gesicherte Daten (Unity Cloud Save):</strong> gekaufte Welten, Helden und das Komplettpaket, deine
     Münzen (je Gerät verdiente und ausgegebene Münzen mit der zufälligen Gerätekennung), deine Abenteuer (Held,
     Stufe, Erfahrung, Attribute, Ausrüstung, Beutel, Schmiede, Bestzeiten), der Gegnerkompass, deine Orden
@@ -422,13 +539,18 @@
 
 <h2 id="ausland">9. Übermittlung ins Ausland</h2>
 <p>
-  Unity hat seinen Sitz in den USA; Unitys Server stehen in verschiedenen Regionen, die Relay-Server in der Regel in
-  deiner Nähe. Für Übermittlungen in die USA hat Unity die Standardvertragsklauseln der EU-Kommission vereinbart
+  Unity hat seinen Sitz in den USA und verarbeitet die Daten dort sowie in Rechenzentren in weiteren Staaten; die
+  Relay-Server wählt die App nach der kürzesten Verbindung, für Spieler in Europa in der Regel in Europa. Für Übermittlungen in die USA hat Unity die Standardvertragsklauseln der EU-Kommission vereinbart
   (Art. 46 Abs. 2 lit. c DSGVO), die auch für Übermittlungen aus der Schweiz anerkannt sind
   (Art. 16 Abs. 2 lit. d DSG). Google stützt Übermittlungen in die USA auf das EU-US bzw. Swiss-US Data Privacy
   Framework (Art. 45 DSGVO, Art. 16 Abs. 1 DSG) und ergänzend auf Standardvertragsklauseln; ebenso Cloudflare, Inc.
-  und Microsoft Corporation, über die deine E-Mails an mich laufen (<a href="#kontakt">Abschnitt 1</a>); beide
-  verarbeiten Daten auch in Rechenzentren in weiteren Ländern.
+  und Microsoft Corporation, über die deine E-Mails an mich laufen (<a href="#kontakt">Abschnitt 1</a>), und
+  GitHub, Inc., das diese Webseite ausliefert (<a href="#webseite">Abschnitt 12</a>); diese drei verarbeiten Daten
+  auch in Rechenzentren in weiteren Ländern.
+  Für die Werbeclips (<a href="#werbung">Abschnitt 7</a>) können Daten laut der Datenschutzerklärung von Unity auch
+  in Israel verarbeitet werden, wo die Unity-Tochter ironSource ihren Sitz hat; für Israel gibt es einen
+  Angemessenheitsbeschluss der EU-Kommission, und auch die Schweiz anerkennt Israel als Staat mit angemessenem
+  Datenschutz (Anhang 1 der Datenschutzverordnung, DSV).
   Die Übermittlung von der Schweiz in die EU und umgekehrt ist durch gegenseitige Angemessenheitsentscheide
   abgedeckt.
 </p>
@@ -437,13 +559,23 @@
 <p>
   Die App richtet sich nicht an Kinder unter 13 Jahren, und ich erhebe wissentlich keine personenbezogenen Daten
   von Kindern unter 13 Jahren. Wenn du als Elternteil feststellst, dass dein Kind unter 13 Jahren den Online-Koop
-  oder die Kontosicherung genutzt hat, kannst du das Online-Konto in der App löschen (siehe
-  <a href="#loeschung">Löschung</a>) oder mir schreiben.
+  genutzt hat, kannst du das Online-Konto in der App löschen (siehe <a href="#loeschung">Löschung</a>) oder mir
+  schreiben.
 </p>
 <p>
-  Eine Einwilligung in personalisierte Werbung kann in manchen Ländern (z. B. Deutschland) erst ab 16 Jahren selbst
-  erteilt werden. Deshalb fragt die App vor dem ersten Werbeclip nach deinem Alter: Wer angibt, jünger als 16 zu
-  sein, erhält nur nicht personalisierte Werbung (siehe <a href="#werbung">Abschnitt 7</a>).
+  Werbeclips gibt es erst ab 16 Jahren. Deshalb fragt die App vor dem ersten Werbeclip zuerst nach deinem Alter: Wer
+  angibt, jünger als 16 zu sein, erhält keine Werbeclips; die App initialisiert die Werbe-Software dann gar nicht und sendet
+  keine Daten an LevelPlay oder Unity Ads (siehe <a href="#werbung">Abschnitt 7</a>). Gespeichert wird nur diese
+  Antwort, nicht das Alter. Setzt du sie im Shop unter „Werbe-Einwilligung“ zurück, fragt die App vor dem nächsten
+  Clip erneut.
+</p>
+<p>
+  Hat dein Kind bei der Altersfrage „16 oder älter“ gewählt, obwohl es jünger ist, setze die Antworten im Shop unter
+  „Werbe-Einwilligung“ zurück und wähle beim nächsten Clip „Nein, unter 16“; ab dem nächsten Start initialisiert die
+  App die Werbe-Software dann nicht mehr. Werbedaten, die Unity bis dahin erhalten hat, verwaltet Unity selbst: Wende
+  dich dazu an Unity (siehe die Datenschutzerklärung von Unity in <a href="#werbung">Abschnitt 7</a>) oder schreib
+  mir, dann helfe ich dir dabei. Hat dein Kind etwas gekauft, findest du in <a href="#loeschung">Abschnitt 11</a>,
+  wie du die Kaufmeldungen an Unity löschen lassen kannst.
 </p>
 
 <h2 id="rechte">11. Deine Rechte und Löschung</h2>
@@ -469,8 +601,10 @@
 <p>
   <strong>In der App:</strong> <span class="path">Einstellungen › Online &amp; Info › Online-Konto löschen › „Löschen …“</span>.
   Die App meldet sich dazu mit dem vorhandenen Anmelde-Token bei Unity an – dabei wird nie ein neues Konto
-  angelegt –, löscht zuerst eine vorhandene Fortschritts-Sicherung (Cloud Save) und dann dein Online-Konto bei Unity
-  samt Verknüpfung mit Google Play Games. Standardmässig werden dabei auch die Koop-Rangliste, das Fehlerprotokoll
+  angelegt – und löscht dann dein Online-Konto bei Unity (ab dem Update mit der Fortschritts-Sicherung aus
+  <a href="#cloud">Abschnitt 8</a> vorher auch die Sicherung und die Verknüpfung mit Google Play Games). Die
+  Kaufmeldungen an Unity (<a href="#kaufmeldungen">Abschnitt 6</a>) werden dabei nicht gelöscht; dafür schreib mir.
+  Standardmässig werden dabei auch die Koop-Rangliste, das Fehlerprotokoll
   und alle gespeicherten Koop-Räume und Kopien auf diesem Gerät gelöscht (abschaltbar). Dein übriger Spielfortschritt
   auf dem Gerät bleibt erhalten; gekaufte Inhalte bleiben bei Google Play erhalten. Dafür ist eine Internetverbindung nötig; während einer laufenden Koop-Runde ist
   das Löschen nicht möglich. Beim nächsten Online-Koop erhältst du eine neue Online-ID.
@@ -480,11 +614,15 @@
   und nenne deine Online-ID
   (<span class="path">Einstellungen › Online &amp; Info › Online-ID › „Kopieren“</span> kopiert die vollständige ID).
   Ich lösche das Konto und eine vorhandene Sicherung dann bei Unity und bestätige dir die Löschung.
+  Für die Kaufmeldungen an Unity (<a href="#kaufmeldungen">Abschnitt 6</a>) nenne mir die Bestellnummer deines Kaufs
+  (beginnt mit „GPA.“ und steht in der Kaufbestätigung von Google); ich leite deine Anfrage auf Auskunft oder
+  Löschung dann an Unity weiter.
 </p>
 <p>
   Hast du die App bereits deinstalliert oder ihre Daten gelöscht, ist die Online-ID auf deinem Gerät nicht mehr
-  vorhanden. Hast du den Fortschritt mit Google gesichert, installiere die App neu und melde dich mit demselben
-  Google-Konto an – dann kannst du das Konto wie oben in der App löschen. Ein anonymes Konto ohne Online-ID kann ich
+  vorhanden. Ab dem Update mit der Fortschritts-Sicherung gilt: Hast du den Fortschritt mit Google gesichert,
+  installiere die App neu und melde dich mit demselben Google-Konto an – dann kannst du das Konto wie oben in der
+  App löschen. Ein Konto ohne Online-ID kann ich
   keiner Person zuordnen (Art. 11 DSGVO).
 </p>
 
@@ -501,10 +639,31 @@
 <h2 id="aenderungen">13. Änderungen und Stand</h2>
 <p>
   Ich passe diese Erklärung an, wenn sich die App oder die rechtlichen Anforderungen ändern. Es gilt die jeweils
-  auf dieser Seite veröffentlichte Fassung. Bei wesentlichen Änderungen zeigt die App den Hinweis zum Online-Koop
-  erneut an.
+  auf dieser Seite veröffentlichte Fassung. Bei wesentlichen Änderungen am Online-Koop zeigt die App den Hinweis zum
+  Online-Koop erneut an.
 </p>
-<p class="small">Fassung 3 · Stand: 5. Oktober 2026 (neuer App-Name „Magic Brawl Odyssey“; neu: Orden auf dem Gerät und in der Sicherung; am selben Tag ergänzt: neue Kontaktadresse support@magicbrawlodyssey.com und Abschnitt „Kontakt per E-Mail“)</p>
+<p class="small">Fassung 4 · Stand: 5. Oktober 2026. Neu gegenüber Fassung 3:</p>
+<ul class="small">
+  <li>Einleitung und Abschnitt 6: Die App fragt bei jedem Start bei Google Play die Preise und deine Käufe ab.</li>
+  <li>Abschnitt 2: die technischen Berechtigungen der eingebundenen Software und die Werbeschnittstellen von
+    Android.</li>
+  <li>Abschnitt 3: Der Hinweis zum Online-Koop in der App ist aktualisiert (Version 3) und wird deshalb noch einmal
+    angezeigt; das Online-Konto wird nicht mehr „anonym“ genannt, weil Unity IAP Käufe nach dem Online-Koop mit der
+    Online-ID meldet.</li>
+  <li>Abschnitt 4: genauer beschrieben, welche Software technische und Diagnosedaten senden kann.</li>
+  <li>Abschnitt 6: die Kaufmeldungen der Kauf-Software Unity IAP an Unity, mit der Rechtsgrundlage für Nutzer in
+    Deutschland (TDDDG).</li>
+  <li>Abschnitt 7: die Daten der Werbe-Software nach den Angaben von LevelPlay und Unity Ads vervollständigt; die
+    App fragt zuerst nach dem Alter, unter 16 gibt es keine Werbeclips; wer das Komplettpaket oder alles besitzt,
+    bekommt keine Werbung, und die Werbe-Software wird nicht initialisiert; meine Mitverantwortung für das Erheben
+    und Übermitteln der Werbedaten; „Datenschutz“ in der Frage zu den Werbeclips.</li>
+  <li>Abschnitt 8: Die Fortschritts-Sicherung ist in der App noch nicht enthalten; sie kommt mit einem späteren
+    Update.</li>
+  <li>Abschnitt 9: Israel (ironSource) bei der Werbung; wo Unity die Daten verarbeitet; GitHub.</li>
+  <li>Abschnitt 10: keine Werbeclips unter 16; was Eltern tun können, wenn ihr Kind „16 oder älter“ gewählt hat.</li>
+  <li>Abschnitt 11: Anfragen zu den Kaufmeldungen an Unity.</li>
+</ul>
+<p class="small">Fassung 3 vom selben Tag: neuer App-Name „Magic Brawl Odyssey“; neu: Orden auf dem Gerät und in der Sicherung; ergänzt: neue Kontaktadresse support@magicbrawlodyssey.com und Abschnitt „Kontakt per E-Mail“.</p>
 
 <section class="en" id="english" lang="en">
 <h2>Privacy policy for Magic Brawl Odyssey – short English version</h2>
@@ -520,48 +679,92 @@
     31 days. Microsoft (Microsoft Ireland Operations Limited, Ireland, with Microsoft Corporation, USA) is itself
     responsible for Outlook.com. I delete our e-mails once your request is settled; if I need proof (e.g. of a
     deletion you asked for), I keep only what is needed, as long as needed.</li>
-  <li><strong>Offline by default:</strong> solo play works without internet; no chat. Progress (incl. orders/awards), coins, purchases,
-    your chosen name, settings, your personalised-ads choice, local leaderboards (the co-op leaderboard also holds
+  <li><strong>Offline by default:</strong> solo play works without internet; no chat. On every start the app asks
+    Google Play for prices and your purchases. Other data goes over the internet only when you use online co-op or
+    delete your online account, buy something or allow ad clips (then on every game start). Progress (incl.
+    orders/awards), coins, purchases, your chosen name, settings, your answers to the ad questions (under 16 or not,
+    clips yes/no, personalised yes/no), local leaderboards (the co-op leaderboard also holds
     co-players' names), the co-op error log, your Online ID, Unity's session token, a random installation ID and a
     random device ID are stored on your device.</li>
   <li><strong>Online co-op (optional, never with ads):</strong> uses Unity Gaming Services (Unity Technologies SF, USA,
-    as my processor): <em>Authentication</em> creates a random player ID (Online ID); <em>Relay</em> forwards the
+    as my processor): <em>Authentication</em> creates a random player ID (Online ID), not linked to your name, e-mail
+    or Google account – but if you buy something after using co-op since the app was started, Unity receives it with
+    the purchase report; <em>Relay</em> forwards the
     encrypted game traffic and processes your IP address, connection data and approximate location; <em>Lobby</em>
     keeps a short-lived private room entry. Co-players receive your chosen name, hero, inputs, game state, your hero's
     level and gear in that room, app version and your Online ID; the host also receives which heroes you own and
-    whether you own the complete bundle – never your IP address.</li>
-  <li><strong>Saved co-op rooms:</strong> every co-op room is saved on the host's device (and in the host's progress
-    backup, if used): for each member the chosen name, the hero and its progress in that room, a random member ID and
+    whether you own the complete bundle – never your IP address. Before the first co-op game the app shows a short
+    notice (updated, version 3) with a link to this policy.</li>
+  <li><strong>Saved co-op rooms:</strong> every co-op room is saved on the host's device (and, once the progress
+    backup exists, in the host's backup if used): for each member the chosen name, the hero and its progress in that room, a random member ID and
     a hash of the member's Online ID – never the Online ID itself. Members keep a copy (room and host name, last room
     code, own hero). Deleting the room removes the members' names and hashes; the host can also delete a single
     member, and you remove your copy under “Deine Räume” › “Entfernen”.</li>
-  <li><strong>In-app purchases:</strong> processed by Google Play; I never receive payment details, only order
-    information (order ID, product, price, time, country), kept as required by accounting law.</li>
-  <li><strong>Optional rewarded ads:</strong> Unity LevelPlay with Unity Ads, only when you choose to watch a clip for
-    coins (never in co-op, none after buying the bundle). They process your IP address, advertising ID, device and app
-    information and ad interactions. The app first asks whether you allow ad clips at all (the ad
-    SDK only starts after “yes”), then whether you are 16 or older (under 16: only
-    non-personalised ads); personalised ads only with your consent, asked before the first clip and resettable in the
-    shop; you can also reset or delete the advertising ID in Android settings.</li>
-  <li><strong>Optional progress backup:</strong> “Mit Google sichern” signs you in with Google Play Games, links your
-    Online ID to your Play Games player ID and stores owned content, coins, your adventures incl. gear and best times,
+  <li><strong>In-app purchases:</strong> processed by Google Play; on every start the app asks Google Play for current
+    prices and your existing purchases (nothing goes to Unity for this); I never receive payment details, only order
+    information (order ID, product, price, time, country), kept as required by accounting law. The purchase software
+    Unity IAP reports every purchase step (started, paid, completed, failed or cancelled) to Unity, also without co-op:
+    product (ID, name, description, price, currency), transaction ID, the Google Play receipt (incl. order ID, purchase
+    time and purchase token), device model, Android version, device languages, storage size, last boot time, app
+    version and install time, random event, purchase and session IDs and – if you used co-op or deleted your online
+    account since the app was started – the Unity installation ID and (while signed in) your Online ID; Unity also
+    receives your IP address (and the country). It also reports sign-ins to Unity (co-op and online-account deletion)
+    and, according to Unity, crash, diagnostic and performance data of the purchase software (sent only once the app
+    has started Unity's services for co-op or account deletion). No advertising ID is included. Purpose: monitoring
+    purchases and finding errors; Unity acts as my processor, and as an independent controller
+    where it uses transaction and billing data for its own purposes (financial reporting, audits, legal obligations,
+    security and fraud prevention); Unity keeps service logs for 90 days; this cannot be switched off in the version
+    used; legal basis Art. 6(1)(f) GDPR (you may object; the reports can only be avoided by not buying and not using
+    co-op).</li>
+  <li><strong>Optional rewarded ads:</strong> Unity LevelPlay with Unity Ads (I am responsible together with Unity for
+    collecting the data in the app and sending it to Unity; Unity is the controller for everything it does with it
+    afterwards); clips
+    only when you choose to watch one for coins – never in co-op, never under 16, none once you own the complete
+    bundle or everything. Before the first clip the app asks: first whether you are 16 or older (under 16: no ad clips
+    at all, the ad SDK never starts; only this answer is stored, not your age), then whether you allow ad clips (the
+    ad SDK only starts after “yes”), then whether personalised ads may be shown (with “no”, according to Unity, only
+    non-personalised ads). After “yes”, the ad SDK starts with every app start and preloads a clip – but not if you
+    own the complete bundle or everything (the app waits for the purchase check with Google Play after start, so a
+    bundle bought on another device counts too). According to Unity (privacy policy and the Google Play data safety
+    information of LevelPlay and Unity Ads) they process your IP address and approximate location, advertising ID and
+    other device and user identifiers, on devices with Android's Privacy Sandbox possibly interest topics and
+    attribution data from Android (can be switched off in Android settings), device and app information, your interactions with the ads, diagnostic data
+    and, according to Unity Ads, purchase history; Unity shares location, identifiers and ad interactions (and, for
+    Unity Ads, purchase history) with advertising partners. I have not enabled “Acquire Optimization” (which would
+    also record when and how long you use the app). Reset your answers in the shop (“Werbe-Einwilligung”): no new
+    clips from that moment, and the ad SDK is not started from the next app start until you answer “yes” again. Via
+    the privacy icon in a clip you can see and request deletion of your ad data; you can also reset or delete the
+    advertising ID in Android settings.</li>
+  <li><strong>Optional progress backup – not yet available, coming with a later update:</strong> the current version
+    of the app does not include it: it does not sign you in with Google Play Games and sends nothing to Unity Cloud
+    Save. Once available, “Mit Google sichern”
+    will sign you in with Google Play Games, link your
+    Online ID to your Play Games player ID and store owned content, coins, your adventures incl. gear and best times,
     the enemy compass, your orders (award counters per device, reached tiers) and your saved co-op rooms or copies
     in Unity Cloud Save until you delete your online
     account.</li>
-  <li><strong>Crash data:</strong> the app sends no crash or diagnostic reports itself. Google Play provides
-    aggregated Android vitals if you allowed this on your device.</li>
+  <li><strong>Crash and diagnostic data:</strong> the game's own code sends no crash or diagnostic reports, and Unity
+    Diagnostics is switched off. The SDKs may send technical, diagnostic and crash data when you use the feature:
+    Unity services in co-op and when deleting your online account, Unity IAP for purchases, in co-op and when deleting
+    your online account, LevelPlay/Unity Ads after you allow ad clips (see above). Google
+    Play provides aggregated Android vitals if you allowed this on your device.</li>
   <li><strong>Legal bases:</strong> Art. 6(1)(b) GDPR (features you request, purchases, e-mails about them), Art. 6(1)(a) GDPR
-    (ad clips and personalised ads), Art. 6(1)(c) GDPR (accounting records, requests about your rights), Art. 6(1)(f) GDPR (security, answering other e-mails). Transfers to the USA rely on Standard Contractual Clauses (Unity) and the EU-US / Swiss-US
-    Data Privacy Framework (Google, Cloudflare, Microsoft).</li>
-  <li><strong>Children:</strong> the app is not directed at children under 13.</li>
+    (ad clips and personalised ads), Art. 6(1)(c) GDPR (accounting records, requests about your rights), Art. 6(1)(f) GDPR (security, purchase reports by Unity IAP, answering other e-mails). Transfers to the USA rely on Standard Contractual Clauses (Unity) and the EU-US / Swiss-US
+    Data Privacy Framework (Google, Cloudflare, Microsoft, GitHub). For ads, Unity may also process data in Israel
+    (ironSource), which the EU and Switzerland recognise as providing adequate protection.</li>
+  <li><strong>Children:</strong> the app is not directed at children under 13. No ad clips under 16 (see above). If a
+    child answered “16 or older” by mistake, reset the answers in the shop (“Werbe-Einwilligung”) and choose “Nein,
+    unter 16”; for ad data Unity already received, contact Unity or me. For purchase reports see “Your rights”.</li>
   <li><strong>Your rights:</strong> access, rectification, erasure, restriction, portability, objection, withdrawal of
-    consent and a complaint to a supervisory authority (Switzerland: FDPIC / EDÖB). Delete your online account and
-    backup in the app under <span class="path">Einstellungen › Online &amp; Info › Online-Konto löschen</span>
-    (Settings › Online &amp; Info › Delete online account), or e-mail me with your Online ID.</li>
+    consent and a complaint to a supervisory authority (Switzerland: FDPIC / EDÖB). Delete your online account in the
+    app under <span class="path">Einstellungen › Online &amp; Info › Online-Konto löschen</span>
+    (Settings › Online &amp; Info › Delete online account), or e-mail me with your Online ID. (Once the progress
+    backup exists, the backup is deleted with the account.) For the purchase reports
+    to Unity, send me the order number (GPA.…) and I will forward your request to Unity.</li>
   <li><strong>This page</strong> is hosted on GitHub Pages (GitHub, Inc., USA), which processes your IP address to
     deliver it. No cookies, no scripts.</li>
 </ul>
-<p class="small">Version 3 · Last updated: 5 October 2026 (new app name “Magic Brawl Odyssey”, formerly “Arkambo” / “Magic Run &amp; Fight”; new: orders/awards on the device and in the backup; added the same day: new contact address support@magicbrawlodyssey.com and how e-mails to it are handled)</p>
+<p class="small">Version 4 · Last updated: 5 October 2026 (new: the price and purchase query to Google Play on every start; purchase reports of Unity IAP to Unity and how to request access or deletion; joint responsibility for collecting ad data in the app; what parents can do if a child chose “16 or older”; more precise wording on crash and diagnostic data; complete list of the data processed by the ad SDKs; the age question comes first, no ad clips under 16, no ad SDK once you own everything; data in Israel for ads; updated in-app co-op notice (version 3); progress backup marked as not yet available (coming with a later update). Version 3 of the same day: new app name “Magic Brawl Odyssey”, formerly “Arkambo” / “Magic Run &amp; Fight”; new: orders/awards on the device and in the backup; new contact address support@magicbrawlodyssey.com and how e-mails to it are handled)</p>
 </section>
 
 </main>
